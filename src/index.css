@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   body{
+    @apply bg-ternaryColor;
+    @apply text-light;
+    @apply  bg-img bg-cover bg-center bg-no-repeat bg-scroll;
+   }
+}
