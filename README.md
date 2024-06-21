@@ -1,2 +1,2 @@
 # My PC clone with React
-```https://mypcclone.netlify.app```
+[Link to preview](https://mypcclone.netlify.app)
