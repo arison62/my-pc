@@ -1,12 +1,14 @@
 import NavViewSearchComponent from "./NavViewSearchComponent";
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace JSX {
     interface IntrinsicElements {
       "ion-icon": { name: string };
     }
   }
 }
+
 
 type Props = {
     onScale : ()=> void
