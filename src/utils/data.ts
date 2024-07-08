@@ -67,7 +67,65 @@ export const folders = new Map<string, CFileSystem>([
       ],
     },
   ],
+  [
+    "Images",
+    {
+      title: "Images",
+      img: picturesImg,
+      path: ["Dossier personnel", "Images"],
+      type: CFileSystemType.DIRECTORY,
+      content: null,
+    },
+  ],
+
+  [
+    "Documents",
+    {
+      title: "Docuemnts",
+      img: documentImg,
+      path: ["Dossier personnel", "Documents"],
+      type: CFileSystemType.DIRECTORY,
+      content: null,
+    },
+  ],
+  [
+    "Download",
+    {
+      title: "Download",
+      img: downloadImg,
+      path: ["Dossier personnel", "Download"],
+      type: CFileSystemType.DIRECTORY,
+      content: null,
+    },
+  ],
 ]);
+
+export const navRailItems: {
+  title: string;
+  icon: string;
+  path: string;
+}[] = [
+  {
+    title : "Dossier personnel",
+    icon : "home-outline",
+    path : "file/Dossier personnel",
+  },
+  {
+    title: "Images",
+    icon: "image-outline",
+    path: "file/Images",
+  },
+  {
+    title: "Documents",
+    icon: "document-text-outline",
+    path: "file/Documents",
+  },
+  {
+    title : "Download",
+    icon : "download-outline",
+    path: "file/Download",
+  }
+];
 
 export const appItem: AppItem[] = [
   {
@@ -106,6 +164,6 @@ export const dockItems: DockItem[] = [
   {
     title: "Fichiers",
     img: fileImg,
-    path: "file",
+    path: "file/Dossier personnel",
   },
 ];

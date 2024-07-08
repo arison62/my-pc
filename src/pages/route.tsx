@@ -19,12 +19,6 @@ const router = createBrowserRouter([
         element: <FileView />,
 
         children: [
-            {
-                path : 'file',
-                loader: () => contentLoader("Dossier personnel"),
-                element : <FileContent />
-            },
-
           {
             path: "file/:fileId",
             loader : ({params}) => contentLoader(params.fileId as string),
